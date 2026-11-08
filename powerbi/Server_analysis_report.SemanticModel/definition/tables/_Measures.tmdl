@@ -1,0 +1,82 @@
+table _Measures
+	lineageTag: c2e86451-e845-4da5-9e0b-739ab78ad706
+
+	measure 'Avg CPU Load' = AVERAGE(stats_hourly[cpu_pct])
+		displayFolder: System Load KPIs
+		lineageTag: 2728f1da-b36b-4623-ba37-5dba8beb449a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Daily Peak CPU' = MAXX(KEEPFILTERS(VALUES('Dim_Calendar'[Date])), CALCULATE(MAX(stats_hourly[cpu_peak_pct])))
+		displayFolder: System Load KPIs
+		lineageTag: 86c49a89-d624-4e77-9ce0-0510b569b77a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Avg Memory Load' = AVERAGE(stats_hourly[memory_pct])
+		displayFolder: System Load KPIs
+		lineageTag: 2993bce3-403f-4fd7-86e8-47bd821dc175
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Avg Swap Usage' = AVERAGE(stats_hourly[swap_pct])
+		displayFolder: System Load KPIs
+		lineageTag: eb5cb58a-3035-4f19-86c0-1ed3cf6a09ce
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Peak Hourly Connections' = MAX(security_hourly[connection_count])
+		formatString: 0
+		displayFolder: Security & Traffic KPIs
+		lineageTag: 43783fbf-c6e1-4832-be18-5386ef4466a8
+
+	measure 'Peak Active Processes' = MAX(security_hourly[active_processes])
+		formatString: 0
+		displayFolder: Security & Traffic KPIs
+		lineageTag: 40486f92-347c-49dc-a0a5-518bcafbac1f
+
+	measure 'Unique IPs Monitored' = DISTINCTCOUNT(security_hourly[source_ip])
+		formatString: 0
+		displayFolder: Security & Traffic KPIs
+		lineageTag: 2ec91b8c-ef57-46f6-926e-0d957a463ca4
+
+	measure 'Total Warning Events' = COUNTROWS(Warnings)
+		formatString: 0
+		displayFolder: Anomaly Detection KPIs
+		lineageTag: 2cb349c6-a607-479e-95d6-106a12f49951
+
+	measure 'Warnings Mitigated' = ```
+			
+			IF(
+			    ISBLANK([Total Warning Events]), 
+			    "0 (System Healthy)", 
+			    [Total Warning Events]
+			)
+			```
+		formatString: 0
+		displayFolder: Anomaly Detection KPIs
+		lineageTag: ce062a15-debb-490a-ac11-b98cc62ad4a9
+
+	measure Swap_Usage_Unfiltered = ```
+			
+			CALCULATE(
+			    [Avg Swap Usage],
+			    ALL('Dim_Time'[Hour String]) 
+			)
+			```
+		lineageTag: b42fab3f-c7bc-47e3-837f-4aba5db00c3d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition _Measures = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+

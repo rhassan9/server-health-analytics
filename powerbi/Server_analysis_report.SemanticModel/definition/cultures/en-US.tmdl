@@ -1,0 +1,4965 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "security_hourly": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "security_hourly"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "security hourly": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "security_hourly": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "hourly": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "security_hourly.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "security_hourly",
+			          "ConceptualProperty": "date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "security_hourly.hour": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "security_hourly",
+			          "ConceptualProperty": "hour"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "hour": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "era": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "epoch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "age": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "security_hourly.username": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "security_hourly",
+			          "ConceptualProperty": "username"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "username": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "security_hourly.active_process": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "security_hourly",
+			          "ConceptualProperty": "active_processes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "active process": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "active_processes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "process": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "active procedure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "active development": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "active progression": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "active method": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "active manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "active activity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "procedure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "development": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "progression": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "method": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "security_hourly.connection_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "security_hourly",
+			          "ConceptualProperty": "connection_count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "connection count": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "connection_count": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "connection amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "security_hourly.source_ip": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "security_hourly",
+			          "ConceptualProperty": "source_ip"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "source ip": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "source_ip": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "ip": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "stats_hourly": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "stats_hourly"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "stats hourly": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "stat hourly": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "stats_hourly": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "hourly": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "stats_hourly.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "stats_hourly",
+			          "ConceptualProperty": "date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "stats_hourly.hour": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "stats_hourly",
+			          "ConceptualProperty": "hour"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "hour": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "era": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "epoch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "age": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "stats_hourly.cpu_pct": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "stats_hourly",
+			          "ConceptualProperty": "cpu_pct"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cpu pct": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cpu_pct": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "stats_hourly.memory_pct": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "stats_hourly",
+			          "ConceptualProperty": "memory_pct"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "memory pct": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "memory_pct": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "stats_hourly.swap_pct": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "stats_hourly",
+			          "ConceptualProperty": "swap_pct"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "swap pct": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "swap_pct": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "warning": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "warnings"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "warning": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "threatening": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cautioning": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "advice": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "admonition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "notice": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "caution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "caveat": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "counsel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "forewarning": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "warning.timestamp": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "warnings",
+			          "ConceptualProperty": "timestamp"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "timestamp": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "warning.timestamp.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "warnings",
+			          "VariationSource": "timestamp",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "timestamp date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "warning.timestamp.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "warnings",
+			          "VariationSource": "timestamp",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "timestamp year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "timestamp yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "warning.timestamp.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "warnings",
+			          "VariationSource": "timestamp",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "timestamp quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "timestamp qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "warning.timestamp.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "warnings",
+			          "VariationSource": "timestamp",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "timestamp month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "timestamp mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "warning.timestamp.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "warnings",
+			          "VariationSource": "timestamp",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "timestamp day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "warning.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "warnings",
+			          "ConceptualProperty": "date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "warning.hour": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "warnings",
+			          "ConceptualProperty": "hour"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "hour": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "era": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "epoch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "age": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "warning.message": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "warnings",
+			          "ConceptualProperty": "message"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "message": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "memo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "memorandum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "missive": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "communication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "note": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "letter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "dispatch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "idea": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "implication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "warning.warning_detail": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "warnings",
+			          "ConceptualProperty": "warning_detail"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "warning detail": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "warning_detail": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "detail": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "warning aspect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "warning element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "warning fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "aspect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "warning part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "warning feature": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "warning point": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "warning factor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendar": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Calendar"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim calendar": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Dim_Calendar": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "calendar": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dim almanac": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "dim datebook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "dim agenda": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "dim logbook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "dim diary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "almanac": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "datebook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "agenda": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "logbook": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "diary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendar.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Calendar",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dim_calendar.date.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Calendar",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dim_calendar.date.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Calendar",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dim_calendar.date.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Calendar",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "moment quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dim_calendar.date.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Calendar",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dim_calendar.date.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Calendar",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dim_calendar.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Calendar",
+			          "ConceptualProperty": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dim_calendar.month_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Calendar",
+			          "ConceptualProperty": "Month Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "month title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "month label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "month tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "mth name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendar.month_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Calendar",
+			          "ConceptualProperty": "Month Number"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month number": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "mth number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendar.day_of_week": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Calendar",
+			          "ConceptualProperty": "Day of Week"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day of week": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendar.date_string": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Calendar",
+			          "ConceptualProperty": "Date String"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date string": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "string": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "moment string": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period string": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "date filament": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "filament": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "date cord": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "date thread": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "date twine": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "date rope": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "cord": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "thread": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "Date": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Time"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim time": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Dim_Time": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dim interval": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dim moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dim period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dim timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_time.value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Time",
+			          "ConceptualProperty": "Value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "usefulness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "dim_time.hour_value": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Time",
+			          "ConceptualProperty": "Hour Value"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hour value": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hour assessment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "hour worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "hour price": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "hour cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "hour charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "hour rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "hour importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "hour significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "hour usefulness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "hour consequence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "dim_time.hour_string": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Time",
+			          "ConceptualProperty": "Hour String"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hour string": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "string": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "hour filament": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "filament": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "hour cord": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "hour thread": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "hour twine": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "hour rope": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "cord": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "thread": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "twine": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rope": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "Hour": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "_measure": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_ degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ quantity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ quota": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "_ amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "_ portion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "_ ration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "_ size": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.avg_CPU_load": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Avg CPU Load"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "avg CPU load": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "average cpu load": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "avg cpu cargo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg cpu consignment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg cpu shipment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg cpu weight": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "avg cpu freight": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "avg cpu burden": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "avg cpu capacity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.daily_peak_CPU": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Daily Peak CPU"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "daily peak CPU": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CPU": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "peak CPU": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.avg_memory_load": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Avg Memory Load"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "avg memory load": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "average memory load": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "avg memory cargo": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg memory consignment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg memory shipment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg memory weight": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "avg memory freight": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "avg memory burden": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "avg memory capacity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.avg_swap_usage": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Avg Swap Usage"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "avg swap usage": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "average swap usage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "avg swap tradition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg swap procedure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg swap convention": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg swap norm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "avg swap practice": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "avg swap custom": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "avg swap habit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "avg swap treatment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "avg swap manipulation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.peak_hourly_connections": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Peak Hourly Connections"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "peak hourly connections": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "connections": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "hourly connections": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "peak hourly acquaintance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "peak hourly friend": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "hourly acquaintance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "hourly friend": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "peak hourly influence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "peak hourly network": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "peak hourly contact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "peak hourly associate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "peak hourly link": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "acquaintance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.peak_active_processes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Peak Active Processes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "peak active processes": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "processes": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "active processes": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "peak active procedure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "peak active development": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "peak active progression": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "peak active method": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "peak active manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "peak active activity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "active procedure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "active development": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "active progression": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "active method": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.unique_IPs_monitored": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Unique IPs Monitored"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "unique IPs monitored": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.total_warning_events": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Total Warning Events"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total warning events": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "events": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "warning events": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate warning event": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall warning event": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "total warning procedure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "warning procedure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "total warning proceeding": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "total warning action": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "total warning measure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "total warning trial": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "total warning dealing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "procedure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.warnings_mitigated": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Warnings Mitigated"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "warnings mitigated": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "advice mitigated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "admonition mitigated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "notice mitigated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "caution mitigated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "caveat mitigated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "counsel mitigated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "forewarning mitigated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "indication mitigated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "portent mitigated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "threat mitigated": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "dim_calendar_date_date_hierarchy_has_dim_calendar_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "dim_calendar.date.date_hierarchy"
+			          }
+			        },
+			        "dim_calendar.date.day": {
+			          "Target": {
+			            "Entity": "dim_calendar.date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "dim_calendar.date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_days"
+			        }
+			      ]
+			    },
+			    "dim_calendar_date_date_hierarchy_has_dim_calendar_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "dim_calendar.date.date_hierarchy"
+			          }
+			        },
+			        "dim_calendar.date.month": {
+			          "Target": {
+			            "Entity": "dim_calendar.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "dim_calendar.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
+			        }
+			      ]
+			    },
+			    "dim_calendar_date_date_hierarchy_has_dim_calendar_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "dim_calendar.date.date_hierarchy"
+			          }
+			        },
+			        "dim_calendar.date.quarter": {
+			          "Target": {
+			            "Entity": "dim_calendar.date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "dim_calendar.date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_quarters"
+			        }
+			      ]
+			    },
+			    "dim_calendar_date_date_hierarchy_has_dim_calendar_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "dim_calendar.date.date_hierarchy"
+			          }
+			        },
+			        "dim_calendar.date.year": {
+			          "Target": {
+			            "Entity": "dim_calendar.date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "dim_calendar.date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years"
+			        }
+			      ]
+			    },
+			    "dim_calendar_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendar.date": {
+			          "Target": {
+			            "Entity": "dim_calendar.date"
+			          }
+			        },
+			        "dim_calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "dim_calendar.date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendar.date"
+			            },
+			            "Object": {
+			              "Role": "dim_calendar.date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "warning_timestamp_date_hierarchy_has_warning_timestamp_day": {
+			      "Binding": {
+			        "ConceptualEntity": "warnings"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "warning.timestamp.date_hierarchy": {
+			          "Target": {
+			            "Entity": "warning.timestamp.date_hierarchy"
+			          }
+			        },
+			        "warning.timestamp.day": {
+			          "Target": {
+			            "Entity": "warning.timestamp.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "warning.timestamp.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "warning.timestamp.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "timestamp_date_hierarchies_have_timestamp_days"
+			        }
+			      ]
+			    },
+			    "warning_timestamp_date_hierarchy_has_warning_timestamp_month": {
+			      "Binding": {
+			        "ConceptualEntity": "warnings"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "warning.timestamp.date_hierarchy": {
+			          "Target": {
+			            "Entity": "warning.timestamp.date_hierarchy"
+			          }
+			        },
+			        "warning.timestamp.month": {
+			          "Target": {
+			            "Entity": "warning.timestamp.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "warning.timestamp.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "warning.timestamp.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "timestamp_date_hierarchies_have_timestamp_months"
+			        }
+			      ]
+			    },
+			    "warning_timestamp_date_hierarchy_has_warning_timestamp_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "warnings"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "warning.timestamp.date_hierarchy": {
+			          "Target": {
+			            "Entity": "warning.timestamp.date_hierarchy"
+			          }
+			        },
+			        "warning.timestamp.quarter": {
+			          "Target": {
+			            "Entity": "warning.timestamp.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "warning.timestamp.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "warning.timestamp.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "timestamp_date_hierarchies_have_timestamp_quarters"
+			        }
+			      ]
+			    },
+			    "warning_timestamp_date_hierarchy_has_warning_timestamp_year": {
+			      "Binding": {
+			        "ConceptualEntity": "warnings"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "warning.timestamp.date_hierarchy": {
+			          "Target": {
+			            "Entity": "warning.timestamp.date_hierarchy"
+			          }
+			        },
+			        "warning.timestamp.year": {
+			          "Target": {
+			            "Entity": "warning.timestamp.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "warning.timestamp.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "warning.timestamp.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "timestamp_date_hierarchies_have_timestamp_years"
+			        }
+			      ]
+			    },
+			    "warning_timestamp_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "warnings"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "warning.timestamp": {
+			          "Target": {
+			            "Entity": "warning.timestamp"
+			          }
+			        },
+			        "warning.timestamp.date_hierarchy": {
+			          "Target": {
+			            "Entity": "warning.timestamp.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "warning.timestamp"
+			            },
+			            "Object": {
+			              "Role": "warning.timestamp.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "timestamps_have_timestamp_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "warning_has_dim_time": {
+			      "Binding": {
+			        "ConceptualEntity": "warnings"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "warning": {
+			          "Target": {
+			            "Entity": "warning"
+			          }
+			        },
+			        "dim_time": {
+			          "Target": {
+			            "Entity": "dim_time"
+			          },
+			          "Nouns": [
+			            {
+			              "hour": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "warning"
+			            },
+			            "Object": {
+			              "Role": "dim_time"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "warning_have_dim_times"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_time"
+			            },
+			            "Object": {
+			              "Role": "warning"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_times_have_warning"
+			        }
+			      ]
+			    },
+			    "warning_has_dim_calendar": {
+			      "Binding": {
+			        "ConceptualEntity": "warnings"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "warning": {
+			          "Target": {
+			            "Entity": "warning"
+			          }
+			        },
+			        "dim_calendar": {
+			          "Target": {
+			            "Entity": "dim_calendar"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "warning"
+			            },
+			            "Object": {
+			              "Role": "dim_calendar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "warning_have_dim_calendars"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendar"
+			            },
+			            "Object": {
+			              "Role": "warning"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendars_have_warning"
+			        }
+			      ]
+			    },
+			    "stats_hourly_has_dim_time": {
+			      "Binding": {
+			        "ConceptualEntity": "stats_hourly"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "stats_hourly": {
+			          "Target": {
+			            "Entity": "stats_hourly"
+			          }
+			        },
+			        "dim_time": {
+			          "Target": {
+			            "Entity": "dim_time"
+			          },
+			          "Nouns": [
+			            {
+			              "hour": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stats_hourly"
+			            },
+			            "Object": {
+			              "Role": "dim_time"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stats_hourlies_have_dim_times"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_time"
+			            },
+			            "Object": {
+			              "Role": "stats_hourly"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_times_have_stats_hourlies"
+			        }
+			      ]
+			    },
+			    "stats_hourly_has_dim_calendar": {
+			      "Binding": {
+			        "ConceptualEntity": "stats_hourly"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "stats_hourly": {
+			          "Target": {
+			            "Entity": "stats_hourly"
+			          }
+			        },
+			        "dim_calendar": {
+			          "Target": {
+			            "Entity": "dim_calendar"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stats_hourly"
+			            },
+			            "Object": {
+			              "Role": "dim_calendar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stats_hourlies_have_dim_calendars"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendar"
+			            },
+			            "Object": {
+			              "Role": "stats_hourly"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendars_have_stats_hourlies"
+			        }
+			      ]
+			    },
+			    "security_hourly_has_dim_time": {
+			      "Binding": {
+			        "ConceptualEntity": "security_hourly"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "security_hourly": {
+			          "Target": {
+			            "Entity": "security_hourly"
+			          }
+			        },
+			        "dim_time": {
+			          "Target": {
+			            "Entity": "dim_time"
+			          },
+			          "Nouns": [
+			            {
+			              "hour": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "security_hourly"
+			            },
+			            "Object": {
+			              "Role": "dim_time"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "security_hourlies_have_dim_times"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_time"
+			            },
+			            "Object": {
+			              "Role": "security_hourly"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_times_have_security_hourlies"
+			        }
+			      ]
+			    },
+			    "security_hourly_has_dim_calendar": {
+			      "Binding": {
+			        "ConceptualEntity": "security_hourly"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "security_hourly": {
+			          "Target": {
+			            "Entity": "security_hourly"
+			          }
+			        },
+			        "dim_calendar": {
+			          "Target": {
+			            "Entity": "dim_calendar"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "security_hourly"
+			            },
+			            "Object": {
+			              "Role": "dim_calendar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "security_hourlies_have_dim_calendars"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendar"
+			            },
+			            "Object": {
+			              "Role": "security_hourly"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendars_have_security_hourlies"
+			        }
+			      ]
+			    },
+			    "warning_has_entity__measure_warnings_mitigated": {
+			      "Binding": {
+			        "ConceptualEntity": "warnings"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "warning": {
+			          "Target": {
+			            "Entity": "warning"
+			          }
+			        },
+			        "entity__measure.warnings_mitigated": {
+			          "Target": {
+			            "Entity": "entity__measure.warnings_mitigated"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "warning"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.warnings_mitigated"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "warning_have_warnings_mitigated"
+			        }
+			      ]
+			    },
+			    "warning_has_entity__measure_total_warning_events": {
+			      "Binding": {
+			        "ConceptualEntity": "warnings"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "warning": {
+			          "Target": {
+			            "Entity": "warning"
+			          }
+			        },
+			        "entity__measure.total_warning_events": {
+			          "Target": {
+			            "Entity": "entity__measure.total_warning_events"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "warning"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.total_warning_events"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "warning_have_total_warning_events"
+			        }
+			      ]
+			    },
+			    "security_hourly_has_entity__measure_unique_IPs_monitored": {
+			      "Binding": {
+			        "ConceptualEntity": "security_hourly"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "security_hourly": {
+			          "Target": {
+			            "Entity": "security_hourly"
+			          }
+			        },
+			        "entity__measure.unique_IPs_monitored": {
+			          "Target": {
+			            "Entity": "entity__measure.unique_IPs_monitored"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "security_hourly"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.unique_IPs_monitored"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "security_hourlies_have_unique_IPs_monitored"
+			        }
+			      ]
+			    },
+			    "security_hourly_has_entity__measure_peak_active_processes": {
+			      "Binding": {
+			        "ConceptualEntity": "security_hourly"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "security_hourly": {
+			          "Target": {
+			            "Entity": "security_hourly"
+			          }
+			        },
+			        "entity__measure.peak_active_processes": {
+			          "Target": {
+			            "Entity": "entity__measure.peak_active_processes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "security_hourly"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.peak_active_processes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "security_hourlies_have_peak_active_processes"
+			        }
+			      ]
+			    },
+			    "security_hourly_has_entity__measure_peak_hourly_connections": {
+			      "Binding": {
+			        "ConceptualEntity": "security_hourly"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "security_hourly": {
+			          "Target": {
+			            "Entity": "security_hourly"
+			          }
+			        },
+			        "entity__measure.peak_hourly_connections": {
+			          "Target": {
+			            "Entity": "entity__measure.peak_hourly_connections"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "security_hourly"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.peak_hourly_connections"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "security_hourlies_have_peak_hourly_connections"
+			        }
+			      ]
+			    },
+			    "stats_hourly_has_entity__measure_avg_swap_usage": {
+			      "Binding": {
+			        "ConceptualEntity": "stats_hourly"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "stats_hourly": {
+			          "Target": {
+			            "Entity": "stats_hourly"
+			          }
+			        },
+			        "entity__measure.avg_swap_usage": {
+			          "Target": {
+			            "Entity": "entity__measure.avg_swap_usage"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stats_hourly"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.avg_swap_usage"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stats_hourlies_have_avg_swap_usage"
+			        }
+			      ]
+			    },
+			    "stats_hourly_has_entity__measure_avg_memory_load": {
+			      "Binding": {
+			        "ConceptualEntity": "stats_hourly"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "stats_hourly": {
+			          "Target": {
+			            "Entity": "stats_hourly"
+			          }
+			        },
+			        "entity__measure.avg_memory_load": {
+			          "Target": {
+			            "Entity": "entity__measure.avg_memory_load"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stats_hourly"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.avg_memory_load"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stats_hourlies_have_avg_memory_load"
+			        }
+			      ]
+			    },
+			    "stats_hourly_has_entity__measure_daily_peak_CPU": {
+			      "Binding": {
+			        "ConceptualEntity": "stats_hourly"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "stats_hourly": {
+			          "Target": {
+			            "Entity": "stats_hourly"
+			          }
+			        },
+			        "entity__measure.daily_peak_CPU": {
+			          "Target": {
+			            "Entity": "entity__measure.daily_peak_CPU"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stats_hourly"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.daily_peak_CPU"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stats_hourlies_have_daily_peak_CPU"
+			        }
+			      ]
+			    },
+			    "dim_calendar_has_entity__measure_daily_peak_CPU": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendar": {
+			          "Target": {
+			            "Entity": "dim_calendar"
+			          }
+			        },
+			        "entity__measure.daily_peak_CPU": {
+			          "Target": {
+			            "Entity": "entity__measure.daily_peak_CPU"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendar"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.daily_peak_CPU"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendars_have_daily_peak_CPU"
+			        }
+			      ]
+			    },
+			    "stats_hourly_has_entity__measure_avg_CPU_load": {
+			      "Binding": {
+			        "ConceptualEntity": "stats_hourly"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "stats_hourly": {
+			          "Target": {
+			            "Entity": "stats_hourly"
+			          }
+			        },
+			        "entity__measure.avg_CPU_load": {
+			          "Target": {
+			            "Entity": "entity__measure.avg_CPU_load"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stats_hourly"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.avg_CPU_load"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stats_hourlies_have_avg_CPU_load"
+			        }
+			      ]
+			    },
+			    "dim_time_has_hour_string": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Time"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_time": {
+			          "Target": {
+			            "Entity": "dim_time"
+			          }
+			        },
+			        "dim_time.hour_string": {
+			          "Target": {
+			            "Entity": "dim_time.hour_string"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_time"
+			            },
+			            "Object": {
+			              "Role": "dim_time.hour_string"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_times_have_hour_strings"
+			        }
+			      ]
+			    },
+			    "dim_time_has_hour_value": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Time"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_time": {
+			          "Target": {
+			            "Entity": "dim_time"
+			          }
+			        },
+			        "dim_time.hour_value": {
+			          "Target": {
+			            "Entity": "dim_time.hour_value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_time"
+			            },
+			            "Object": {
+			              "Role": "dim_time.hour_value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_times_have_hour_values"
+			        }
+			      ]
+			    },
+			    "dim_time_has_value": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Time"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_time": {
+			          "Target": {
+			            "Entity": "dim_time"
+			          }
+			        },
+			        "dim_time.value": {
+			          "Target": {
+			            "Entity": "dim_time.value"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_time"
+			            },
+			            "Object": {
+			              "Role": "dim_time.value"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_times_have_values"
+			        }
+			      ]
+			    },
+			    "dim_calendar_has_date_string": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendar": {
+			          "Target": {
+			            "Entity": "dim_calendar"
+			          }
+			        },
+			        "dim_calendar.date_string": {
+			          "Target": {
+			            "Entity": "dim_calendar.date_string"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendar"
+			            },
+			            "Object": {
+			              "Role": "dim_calendar.date_string"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendars_have_date_strings"
+			        }
+			      ]
+			    },
+			    "dim_calendar_has_day_of_week": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendar": {
+			          "Target": {
+			            "Entity": "dim_calendar"
+			          }
+			        },
+			        "dim_calendar.day_of_week": {
+			          "Target": {
+			            "Entity": "dim_calendar.day_of_week"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendar"
+			            },
+			            "Object": {
+			              "Role": "dim_calendar.day_of_week"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendars_have_day_of_week"
+			        }
+			      ]
+			    },
+			    "dim_calendar_has_month_number": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendar": {
+			          "Target": {
+			            "Entity": "dim_calendar"
+			          }
+			        },
+			        "dim_calendar.month_number": {
+			          "Target": {
+			            "Entity": "dim_calendar.month_number"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendar"
+			            },
+			            "Object": {
+			              "Role": "dim_calendar.month_number"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendars_have_month_numbers"
+			        }
+			      ]
+			    },
+			    "dim_calendar_has_month_name": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendar": {
+			          "Target": {
+			            "Entity": "dim_calendar"
+			          }
+			        },
+			        "dim_calendar.month_name": {
+			          "Target": {
+			            "Entity": "dim_calendar.month_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendar"
+			            },
+			            "Object": {
+			              "Role": "dim_calendar.month_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendars_have_month_names"
+			        }
+			      ]
+			    },
+			    "dim_calendar_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendar": {
+			          "Target": {
+			            "Entity": "dim_calendar"
+			          }
+			        },
+			        "dim_calendar.year": {
+			          "Target": {
+			            "Entity": "dim_calendar.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendar"
+			            },
+			            "Object": {
+			              "Role": "dim_calendar.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendars_have_years"
+			        }
+			      ]
+			    },
+			    "dim_calendar_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendar": {
+			          "Target": {
+			            "Entity": "dim_calendar"
+			          }
+			        },
+			        "dim_calendar.date": {
+			          "Target": {
+			            "Entity": "dim_calendar.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendar"
+			            },
+			            "Object": {
+			              "Role": "dim_calendar.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendars_have_dates"
+			        }
+			      ]
+			    },
+			    "warning_has_warning_detail": {
+			      "Binding": {
+			        "ConceptualEntity": "warnings"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "warning": {
+			          "Target": {
+			            "Entity": "warning"
+			          }
+			        },
+			        "warning.warning_detail": {
+			          "Target": {
+			            "Entity": "warning.warning_detail"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "warning"
+			            },
+			            "Object": {
+			              "Role": "warning.warning_detail"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "warning_have_warning_details"
+			        }
+			      ]
+			    },
+			    "warning_has_message": {
+			      "Binding": {
+			        "ConceptualEntity": "warnings"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "warning": {
+			          "Target": {
+			            "Entity": "warning"
+			          }
+			        },
+			        "warning.message": {
+			          "Target": {
+			            "Entity": "warning.message"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "warning"
+			            },
+			            "Object": {
+			              "Role": "warning.message"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "warning_have_messages"
+			        }
+			      ]
+			    },
+			    "warning_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "warnings"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "warning": {
+			          "Target": {
+			            "Entity": "warning"
+			          }
+			        },
+			        "warning.date": {
+			          "Target": {
+			            "Entity": "warning.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "warning"
+			            },
+			            "Object": {
+			              "Role": "warning.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "warning_have_dates"
+			        }
+			      ]
+			    },
+			    "warning_has_timestamp": {
+			      "Binding": {
+			        "ConceptualEntity": "warnings"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "warning": {
+			          "Target": {
+			            "Entity": "warning"
+			          }
+			        },
+			        "warning.timestamp": {
+			          "Target": {
+			            "Entity": "warning.timestamp"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "warning"
+			            },
+			            "Object": {
+			              "Role": "warning.timestamp"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "warning_have_timestamps"
+			        }
+			      ]
+			    },
+			    "stats_hourly_has_swap_pct": {
+			      "Binding": {
+			        "ConceptualEntity": "stats_hourly"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "stats_hourly": {
+			          "Target": {
+			            "Entity": "stats_hourly"
+			          }
+			        },
+			        "stats_hourly.swap_pct": {
+			          "Target": {
+			            "Entity": "stats_hourly.swap_pct"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stats_hourly"
+			            },
+			            "Object": {
+			              "Role": "stats_hourly.swap_pct"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stats_hourlies_have_swap_pcts"
+			        }
+			      ]
+			    },
+			    "stats_hourly_has_memory_pct": {
+			      "Binding": {
+			        "ConceptualEntity": "stats_hourly"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "stats_hourly": {
+			          "Target": {
+			            "Entity": "stats_hourly"
+			          }
+			        },
+			        "stats_hourly.memory_pct": {
+			          "Target": {
+			            "Entity": "stats_hourly.memory_pct"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stats_hourly"
+			            },
+			            "Object": {
+			              "Role": "stats_hourly.memory_pct"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stats_hourlies_have_memory_pcts"
+			        }
+			      ]
+			    },
+			    "stats_hourly_has_cpu_pct": {
+			      "Binding": {
+			        "ConceptualEntity": "stats_hourly"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "stats_hourly": {
+			          "Target": {
+			            "Entity": "stats_hourly"
+			          }
+			        },
+			        "stats_hourly.cpu_pct": {
+			          "Target": {
+			            "Entity": "stats_hourly.cpu_pct"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stats_hourly"
+			            },
+			            "Object": {
+			              "Role": "stats_hourly.cpu_pct"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stats_hourlies_have_cpu_pcts"
+			        }
+			      ]
+			    },
+			    "stats_hourly_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "stats_hourly"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "stats_hourly": {
+			          "Target": {
+			            "Entity": "stats_hourly"
+			          }
+			        },
+			        "stats_hourly.date": {
+			          "Target": {
+			            "Entity": "stats_hourly.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "stats_hourly"
+			            },
+			            "Object": {
+			              "Role": "stats_hourly.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "stats_hourlies_have_dates"
+			        }
+			      ]
+			    },
+			    "security_hourly_has_source_ip": {
+			      "Binding": {
+			        "ConceptualEntity": "security_hourly"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "security_hourly": {
+			          "Target": {
+			            "Entity": "security_hourly"
+			          }
+			        },
+			        "security_hourly.source_ip": {
+			          "Target": {
+			            "Entity": "security_hourly.source_ip"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "security_hourly"
+			            },
+			            "Object": {
+			              "Role": "security_hourly.source_ip"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "security_hourlies_have_source_ip"
+			        }
+			      ]
+			    },
+			    "security_hourly_has_connection_count": {
+			      "Binding": {
+			        "ConceptualEntity": "security_hourly"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "security_hourly": {
+			          "Target": {
+			            "Entity": "security_hourly"
+			          }
+			        },
+			        "security_hourly.connection_count": {
+			          "Target": {
+			            "Entity": "security_hourly.connection_count"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "security_hourly"
+			            },
+			            "Object": {
+			              "Role": "security_hourly.connection_count"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "security_hourlies_have_connection_counts"
+			        }
+			      ]
+			    },
+			    "security_hourly_has_active_process": {
+			      "Binding": {
+			        "ConceptualEntity": "security_hourly"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "security_hourly": {
+			          "Target": {
+			            "Entity": "security_hourly"
+			          }
+			        },
+			        "security_hourly.active_process": {
+			          "Target": {
+			            "Entity": "security_hourly.active_process"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "security_hourly"
+			            },
+			            "Object": {
+			              "Role": "security_hourly.active_process"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "security_hourlies_have_active_processes"
+			        }
+			      ]
+			    },
+			    "security_hourly_has_username": {
+			      "Binding": {
+			        "ConceptualEntity": "security_hourly"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "security_hourly": {
+			          "Target": {
+			            "Entity": "security_hourly"
+			          }
+			        },
+			        "security_hourly.username": {
+			          "Target": {
+			            "Entity": "security_hourly.username"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "security_hourly"
+			            },
+			            "Object": {
+			              "Role": "security_hourly.username"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "security_hourlies_have_usernames"
+			        }
+			      ]
+			    },
+			    "security_hourly_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "security_hourly"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "security_hourly": {
+			          "Target": {
+			            "Entity": "security_hourly"
+			          }
+			        },
+			        "security_hourly.date": {
+			          "Target": {
+			            "Entity": "security_hourly.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "security_hourly"
+			            },
+			            "Object": {
+			              "Role": "security_hourly.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "security_hourlies_have_dates"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

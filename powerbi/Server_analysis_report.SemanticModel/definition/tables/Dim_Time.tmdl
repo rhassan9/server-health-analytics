@@ -1,0 +1,45 @@
+table Dim_Time
+	lineageTag: 46716365-000c-4e41-bc1b-7afd0b2d0cbb
+
+	column Value
+		formatString: 0
+		lineageTag: ecbb693d-37ad-4ec2-9e58-a9ba1d0d6abe
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Hour Value'
+		formatString: 0
+		lineageTag: 3754c08d-b5cc-4d12-afd6-b4f4778cf78a
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Hour Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Hour String'
+		lineageTag: aef6f2b7-5ed2-4893-aae3-c626e0e0adf9
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Hour String]
+		sortByColumn: 'Hour Value'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Time = calculated
+		mode: import
+		source =
+				
+				GENERATE(
+				    GENERATESERIES(0, 23, 1),
+				    VAR _Hour = [Value]
+				    RETURN ROW(
+				        "Hour Value", _Hour,
+				        "Hour String", FORMAT(_Hour, "00") & ":00"
+				    )
+				)
+
+	annotation PBI_Id = 5be717603531455a8f19af94c4ee4a0e
+

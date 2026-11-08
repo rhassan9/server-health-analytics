@@ -1,0 +1,74 @@
+table Dim_Calendar
+	lineageTag: 9b007e00-10fe-4797-a2c5-967441c9f645
+
+	column Date
+		formatString: General Date
+		lineageTag: 0035a1e9-3bcd-4671-91af-7458f64e2585
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: cd735b8f-39ca-4b78-91b6-89877aa54bb7
+			defaultHierarchy: LocalDateTable_aa772da0-27b3-4e5f-bae1-c15eded161a2.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		formatString: 0
+		lineageTag: da2d6a28-29d6-4da0-9928-575254e9e9ca
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Name'
+		lineageTag: 8aa1b1e5-9cdf-42d2-b32f-f70585a0e8f3
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month Name]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Number'
+		formatString: 0
+		lineageTag: 0cfa758b-7473-47f9-a7fa-e8bdf3e1419d
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Month Number]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Day of Week'
+		lineageTag: 68ae4eed-5e45-46fb-ac73-80455b6d5d2c
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Day of Week]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date String'
+		lineageTag: 6a2bd2c3-bf50-4439-b930-99506bba602b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date String]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Calendar = calculated
+		mode: import
+		source =
+				
+				ADDCOLUMNS(
+				    CALENDARAUTO(),
+				    "Year", YEAR([Date]),
+				    "Month Name", FORMAT([Date], "MMM"),
+				    "Month Number", MONTH([Date]),
+				    "Day of Week", FORMAT([Date], "ddd"),
+				    "Date String", FORMAT([Date], "yyyy-mm-dd")
+				)
+
+	annotation PBI_Id = 3a1a9e05ebd74925b55c0ae4f055a98e
+

@@ -1,0 +1,5 @@
+expression DataFolder = "C:\server-health-analytics\data\processed\" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 990714cb-767d-4760-9a0f-6be20a1c7dfd
+
+	annotation PBI_ResultType = Text
+

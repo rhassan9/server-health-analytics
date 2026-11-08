@@ -21,6 +21,12 @@ def _slot(df):
     return pd.to_datetime(df["date"].astype(str)) + pd.to_timedelta(df["hour"], unit="h")
 
 
+def _hourly_peak(t, key, value):
+    """Highest value per hour for each user / IP."""
+    sec = t["security_events"].dropna(subset=[key, value])
+    return sec.groupby(["date", "hour", key], as_index=False)[value].max()
+
+
 def _time_axis(ax):
     ax.xaxis.set_major_locator(mdates.HourLocator(interval=3))
     ax.xaxis.set_major_formatter(mdates.DateFormatter("%d %b\n%H:%M"))
@@ -72,24 +78,22 @@ def plot_swap_warning(ax, t):
 
 
 def plot_connections(ax, t):
-    h = t["security_hourly"]
-    h = h[h["metric"] == "connections"]
-    for ip, g in h.groupby("entity"):
-        over = g["peak_value"] > CONNECTION_THRESHOLD
-        ax.bar(_slot(g), g["peak_value"], width=0.035,
+    h = _hourly_peak(t, "source_ip", "connection_count")
+    for ip, g in h.groupby("source_ip"):
+        over = g["connection_count"] > CONNECTION_THRESHOLD
+        ax.bar(_slot(g), g["connection_count"], width=0.035,
                color=[ALERT if o else MUTED for o in over], label=ip)
     ax.axhline(CONNECTION_THRESHOLD, color=ALERT, ls=":", lw=1.2, label=f"Threshold ({CONNECTION_THRESHOLD})")
     ax.legend(fontsize=8, frameon=True, loc="lower right")
-    ax.set_title(f"Peak hourly connections from {', '.join(h['entity'].unique())}", loc="left", fontweight="bold")
+    ax.set_title(f"Peak hourly connections from {', '.join(h['source_ip'].unique())}", loc="left", fontweight="bold")
     ax.set_ylabel("Connections")
     _time_axis(ax)
 
 
 def plot_processes_vs_cpu(ax, t):
-    h = t["security_hourly"]
-    h = h[h["metric"] == "active_processes"]
-    for user, g in h.groupby("entity"):
-        ax.plot(_slot(g), g["peak_value"], marker="o", ms=3, color="#3d8b37", lw=2, label=f"'{user}' peak processes")
+    h = _hourly_peak(t, "username", "active_processes")
+    for user, g in h.groupby("username"):
+        ax.plot(_slot(g), g["active_processes"], marker="o", ms=3, color="#3d8b37", lw=2, label=f"'{user}' peak processes")
     ax.set_ylabel("Active processes")
     ax2 = ax.twinx()
     hourly = t["stats_hourly"]

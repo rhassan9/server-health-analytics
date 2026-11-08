@@ -5,12 +5,16 @@ The log mixes three kinds of event in one free-text column. This step splits
 them, extracts the numbers from the message text and writes:
 
   data/processed/stats.csv            one row per resource reading (CPU / memory / swap %)
-  data/processed/stats_hourly.csv     hourly averages of those readings
+  data/processed/stats_hourly.csv     hourly averages, plus the hour's highest CPU reading
   data/processed/security_events.csv  one row per security event (user processes or IP connections)
-  data/processed/security_hourly.csv  hourly peaks per user and per source IP
+  data/processed/security_hourly.csv  the same events keyed by date + hour, without the timestamp
   data/processed/warnings.csv         system warnings with their detail
   data/processed/server_health_summary.xlsx
-                                      Stats / Security / Warnings sheets, the Power BI source
+                                      Stats / Security / Warnings sheets for Excel users
+
+stats_hourly, security_hourly and warnings are the three fact tables the Power BI
+model (powerbi/) loads. Their file names and columns are part of that contract:
+changing them breaks the model's refresh.
 """
 import pandas as pd
 
@@ -52,8 +56,9 @@ def build_security(events: pd.DataFrame) -> pd.DataFrame:
     df = _add_time_keys(events[events["type"] == "SECURITY"])
     msg = df["message"]
     df["username"] = msg.str.extract(r"User\s+'([^']+)'", expand=False)
-    df["active_processes"] = msg.str.extract(r"has\s+(\d+)\s+active processes", expand=False).astype(float)
-    df["connection_count"] = msg.str.extract(r"High connections\s+\((\d+)\)", expand=False).astype(float)
+    # Nullable integers: each event carries one of the two counts, and the CSV should read "32", not "32.0".
+    df["active_processes"] = msg.str.extract(r"has\s+(\d+)\s+active processes", expand=False).astype("Int64")
+    df["connection_count"] = msg.str.extract(r"High connections\s+\((\d+)\)", expand=False).astype("Int64")
     df["source_ip"] = msg.str.extract(r"from IP\s+(\d{1,3}(?:\.\d{1,3}){3})", expand=False)
 
     unrecognised = df["active_processes"].isna() & df["connection_count"].isna()
@@ -70,20 +75,20 @@ def build_warnings(events: pd.DataFrame) -> pd.DataFrame:
 
 
 def hourly_stats(stats: pd.DataFrame) -> pd.DataFrame:
-    return (stats.groupby(["date", "hour"], as_index=False)[list(PCT_FIELDS)]
-            .mean().round(2))
+    """Hourly averages, plus the highest single CPU reading in the hour.
+
+    Averages alone hide the short CPU bursts (a 60% reading becomes an 11.7% hourly
+    average), so the peak is kept as its own column for the 'Daily Peak CPU' measure.
+    """
+    grouped = stats.groupby(["date", "hour"])
+    hourly = grouped[list(PCT_FIELDS)].mean().round(2)
+    hourly["cpu_peak_pct"] = grouped["cpu_pct"].max()
+    return hourly.reset_index()
 
 
-def hourly_security(security: pd.DataFrame) -> pd.DataFrame:
-    users = (security.dropna(subset=["username"])
-             .groupby(["date", "hour", "username"], as_index=False)["active_processes"].max()
-             .rename(columns={"username": "entity", "active_processes": "peak_value"})
-             .assign(metric="active_processes"))
-    ips = (security.dropna(subset=["source_ip"])
-           .groupby(["date", "hour", "source_ip"], as_index=False)["connection_count"].max()
-           .rename(columns={"source_ip": "entity", "connection_count": "peak_value"})
-           .assign(metric="connections"))
-    return pd.concat([users, ips], ignore_index=True)[["date", "hour", "metric", "entity", "peak_value"]]
+def security_by_hour(security: pd.DataFrame) -> pd.DataFrame:
+    """Security events keyed by date + hour: the shape the Power BI model expects."""
+    return security.drop(columns=["timestamp"])
 
 
 def transform(events: pd.DataFrame, out_dir=PROCESSED_DIR) -> dict:
@@ -93,7 +98,7 @@ def transform(events: pd.DataFrame, out_dir=PROCESSED_DIR) -> dict:
         "warnings": build_warnings(events),
     }
     tables["stats_hourly"] = hourly_stats(tables["stats"])
-    tables["security_hourly"] = hourly_security(tables["security_events"])
+    tables["security_hourly"] = security_by_hour(tables["security_events"])
 
     out_dir.mkdir(parents=True, exist_ok=True)
     for name, df in tables.items():

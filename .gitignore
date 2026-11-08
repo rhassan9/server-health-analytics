@@ -2,3 +2,7 @@
 __pycache__/
 *.pyc
 .DS_Store
+
+# Power BI local state (per machine)
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
