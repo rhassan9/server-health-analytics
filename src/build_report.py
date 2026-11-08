@@ -5,7 +5,7 @@ All numbers are filled in from findings.compute_findings().
 """
 from fpdf import FPDF
 
-from src.findings import CONNECTION_THRESHOLD, SPIKE_PCT
+from src.findings import CONNECTION_THRESHOLD, SPIKE_PCT, spike_schedule
 from src.paths import REPORT_PDF
 
 
@@ -43,7 +43,7 @@ def build_report(f: dict, charts: dict, out=REPORT_PDF):
     pdf.section(
         "Scope",
         f"One server-monitoring log from {f['start']:%d %b %H:%M} to {f['end']:%d %b %H:%M} "
-        f"({f['hours_covered']} hours): resource readings every 10 minutes, security events "
+        f"({f['hours_covered']} hourly slots): resource readings every 10 minutes, security events "
         f"(per-user process counts and per-IP connection counts) and system warnings. "
         f"The raw text log was parsed into structured tables; every line parsed, none were dropped.",
     )
@@ -52,8 +52,9 @@ def build_report(f: dict, charts: dict, out=REPORT_PDF):
         f"Average CPU is low ({f['cpu_avg']:.1f}%), but readings reach {f['cpu_peak']:.0f}% "
         f"(peak at {f['cpu_peak_at']:%d %b %H:%M}). All {f['cpu_spikes']} readings of {SPIKE_PCT}% or more "
         f"were taken at minute :00. Readings on the hour average {f['cpu_top_of_hour_avg']:.1f}%, every other "
-        f"reading {f['cpu_other_avg']:.1f}%. That pattern points to a scheduled job (cron or similar), mostly "
-        f"every two hours overnight. Hourly averaging flattens these bursts to at most "
+        f"reading {f['cpu_other_avg']:.1f}%, and each burst lasts a single reading. That pattern points to a "
+        f"scheduled job (cron or similar). The spikes landed at {spike_schedule(f)}. "
+        f"Hourly averaging flattens these bursts to at most "
         f"{f['cpu_peak_hourly_avg']:.1f}%, so a dashboard built on hourly averages understates peak load "
         f"about {f['cpu_peak'] / f['cpu_peak_hourly_avg']:.0f}x.",
         charts["cpu_memory"],
@@ -79,14 +80,18 @@ def build_report(f: dict, charts: dict, out=REPORT_PDF):
     )
     pdf.section(
         "4. User processes don't explain the CPU load",
-        f"User '{f['proc_peak_user']}' peaked at {f['proc_peak']:.0f} active processes "
-        f"({f['proc_peak_at']:%d %b %H:%M}), but hourly process counts and hourly CPU are essentially "
-        f"uncorrelated (r = {f['cpu_proc_corr']:.2f}). The CPU bursts in finding 1 come from something else.",
+        f"User '{f['proc_peak_user']}' peaked at {f['proc_peak']:.0f} active processes at "
+        f"{f['proc_peak_at']:%d %b %H:%M}, when CPU read {f['cpu_at_proc_peak']:.0f}%. At the CPU peak "
+        f"({f['cpu_peak']:.0f}%, {f['cpu_peak_at']:%H:%M}) the same user had {f['procs_at_cpu_peak']:.0f}. "
+        f"Across all hours the two are uncorrelated, whichever way CPU is summarised: r = {f['cpu_proc_corr']:.2f} "
+        f"against the hourly average and r = {f['cpu_peak_proc_corr']:.2f} against the hourly peak. "
+        f"An early draft of this analysis blamed this user for the CPU load; the data doesn't support that. "
+        f"The bursts in finding 1 come from the scheduled job.",
         charts["processes_vs_cpu"],
     )
     pdf.section(
         "Limits",
-        "This is a single 24-hour sample from one server, so it shows patterns, not trends. The pipeline and the "
+        "This is a single day-long sample from one server, so it shows patterns, not trends. The pipeline and the "
         "Power BI model have date dimensions so more days of logs can be appended without changes.",
     )
     out.parent.mkdir(parents=True, exist_ok=True)

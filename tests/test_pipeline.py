@@ -82,4 +82,9 @@ def test_full_log_parses_completely_and_findings_hold(tmp_path):
     f = compute_findings(transform(events, out_dir=tmp_path))
     assert f["cpu_peak"] == 60 and f["cpu_spikes"] == f["cpu_spikes_on_the_hour"]
     assert f["swap_before"] == 12 and f["swap_after"] == 2
-    assert abs(f["cpu_proc_corr"]) < 0.3
+    # Processes don't explain CPU, whether CPU is averaged or peaked per hour...
+    assert abs(f["cpu_proc_corr"]) < 0.3 and abs(f["cpu_peak_proc_corr"]) < 0.3
+    # ...and the process peak falls in a quiet CPU reading, not a spike.
+    assert f["cpu_at_proc_peak"] < 15 and f["procs_at_cpu_peak"] < f["proc_peak"]
+    # Every spike is on the hour.
+    assert all(ts.minute == 0 for ts in f["cpu_spike_times"])

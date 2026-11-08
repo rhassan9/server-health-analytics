@@ -56,7 +56,9 @@ All measures are in the `_Measures` table ([definition](../powerbi/Server_analys
 |---|---|
 | **Executive Command Center** | KPI cards (Daily Peak CPU, Avg Memory Load, Warnings) and CPU and memory by hour, with Date and Hour slicers |
 | **Anomalies & Threat Intelligence** | Connections by source IP and hour against a 300-connection threshold line, and peak processes by user, with IP and user slicers |
-| **Diagnostic Root-Cause Analysis** | Drill-through page: right-click any hour on the first page and choose *Drill through*. It shows that hour's warning count, swap gauge and the event log. |
+| **Diagnostic Root-Cause Analysis** | Drill-through page, filtered on `Dim_Time[Hour String]`. Right-click any hour on a page 1 or page 2 chart and choose *Drill through*. It shows that hour's warning count, swap gauge and event log. |
+
+There are three pages. The drill-through is the link from pages 1 and 2 into page 3, not a page of its own.
 
 ## KPIs and the decisions they support
 

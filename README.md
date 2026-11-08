@@ -26,13 +26,13 @@ pytest                        # requires requirements-dev.txt
 
 ## What the data shows
 
-The source is one 24-hour log of 539 lines, and every line parsed.
+The source is one day of logs (23 Mar 12:13 to 24 Mar 11:10), 539 lines, and every line parsed.
 
-- **CPU load comes in scheduled bursts.** All 12 readings of 15% or more were taken at minute :00. Those readings average 24.5%, against 2.0% for every other reading: the signature of a cron-style job, mostly running every two hours overnight.
+- **CPU load comes in scheduled bursts.** All 12 readings of 15% or more were taken at minute :00, and each burst lasts a single 10-minute reading. On-the-hour readings average 24.5%, against 2.0% for every other reading: the signature of a cron-style job. The bursts land every two hours from 16:00, and every hour between 00:00 and 04:00.
 - **Averages hid the peak.** Hourly averaging flattens a 60% reading to 11.7%. The dashboard's *Daily Peak CPU* card originally showed 11.67% for this reason. I fixed it after delivery: the pipeline now keeps each hour's highest reading, and the measure reads that.
 - **The swapping warning resolved itself.** 50 minutes after the 18:00 warning, swap fell from 12% to 2% and memory from 34% to 24% in the same reading.
 - **One internal IP (10.239.61.54) held 300+ connections in 17 of 24 hours.** A private address at that volume is more likely a service, such as a load balancer or connection pool, than an attack. The next step is to identify that host and set its expected baseline.
-- **User processes don't explain the CPU.** Hourly process counts and CPU are uncorrelated (r = −0.08). This corrects the first draft of the client report, which blamed user `geneva`.
+- **User processes don't explain the CPU.** The first draft of the client report blamed user `geneva`. The data says otherwise. The user's process count peaked at 38 at 02:40, when CPU read 2%. At the day's CPU peak (60% at 04:00), the count had already fallen to 32. Across all hours the two are uncorrelated however CPU is summarised: r = −0.08 against the hourly average, and r = 0.05 against the hourly peak.
 
 Full write-up with charts: [reports/Server_Health_Report.pdf](reports/Server_Health_Report.pdf).
 
@@ -42,11 +42,13 @@ The model is a star schema: three fact tables joined to `Dim_Calendar` and `Dim_
 
 To open it, see [docs/power-bi.md](docs/power-bi.md), which covers the `DataFolder` parameter, the model diagram, every measure, and the KPIs with the decisions each one supports.
 
-| Executive Command Center | Anomalies & Threat Intelligence |
+The report has three pages. The drill-through is an interaction, not a fourth page: right-click any hour on a page 1 or page 2 chart to open page 3 filtered to that hour.
+
+| Page 1: Executive Command Center | Page 2: Anomalies & Threat Intelligence |
 |---|---|
-| ![Executive Command Center page](powerbi/screenshots/1-executive-command-center.png) | ![Anomalies and threat intelligence page](powerbi/screenshots/3-anomalies-and-threats.png) |
-| **Drill through from any hour…** | **…to the root-cause page** |
-| ![Right-click drill-through menu](powerbi/screenshots/2-drill-through-menu.png) | ![Diagnostic root-cause page](powerbi/screenshots/4-diagnostic-root-cause.png) |
+| ![Executive Command Center page](powerbi/screenshots/page1-executive-command-center.png) | ![Anomalies and threat intelligence page](powerbi/screenshots/page2-anomalies-and-threats.png) |
+| **Page 1: right-click an hour → Drill through** | **Page 3: Diagnostic Root-Cause Analysis (drill-through target)** |
+| ![Right-click drill-through menu](powerbi/screenshots/page1-drill-through-menu.png) | ![Diagnostic root-cause page](powerbi/screenshots/page3-diagnostic-root-cause.png) |
 
 *The screenshots were taken before the Daily Peak CPU fix, so that card still reads 11.67.*
 
