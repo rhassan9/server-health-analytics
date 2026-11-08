@@ -1,0 +1,2 @@
+timestamp,date,hour,warning_detail,message
+2026-03-23 18:00:02,2026-03-23,18,Swap IO: 816 blocks/s,Active swapping detected (Swap IO: 816 blocks/s)
